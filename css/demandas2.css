@@ -1,0 +1,138 @@
+* {
+ margin: 0;
+ padding: 0;
+ text-decoration: none;
+ list-style: none;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor1: #48cae4;
+    --cor2: #ade8f4;
+    --cor3: #0096c7;
+    --cor4: lightgray;
+    --background: whitesmoke;
+}
+
+body {
+    background-color: var(--cor2);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: var(--background);
+    height: 7vh;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.418);
+    padding: 10px;
+     position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+header > .main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+header > .main > .logo {
+    width: 3vw;
+    height: 3vw;
+}
+
+header > a > .logo {
+    margin: 0 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 3vw;
+    height: 3vw;
+}
+
+main{
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    gap: 1rem;
+    padding: 10px;
+    max-height: 90vh;
+}
+
+main > h2 {
+    margin-top: 100px ;
+    padding: 10px;
+    border-bottom: solid 1px gray ;
+    width: 50%;
+}
+
+.data > img {
+    width: 3vw;
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin: 20px;
+}
+
+.data > .text {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.logo {
+    width: 5vw;
+    height: 5vw;
+    background-color: var(--background);
+}
+
+.anexos {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.anexos > .anexo {
+    background-color: var(--cor1);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.432);
+    width: 20vw;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.anexo > img {
+    width: 5vw;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.buttons > a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--cor1);
+    width: 80vw;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.26);
+}
